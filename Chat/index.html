@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Вхід</title>
+  <meta charset="UTF-8">
+  <script src="main.js"></script>
+  <style>
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 1px solid green;
+      padding: 50px;
+      margin-top: 3px;
+    }
+
+    .left {
+      float: left;
+      width: 45%;
+      border: 1px solid green;
+      padding: 10px;
+      margin-top: 3px;
+    }
+
+    .right {
+      float: right;
+      width: 45%;
+      border: 1px solid green;
+      padding: 10px;
+      margin-top: 3px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="left">
+    <div id="sasha">Саша:</div> 
+    <input id="inp"/> 
+    <button onclick="send1()">Відправити</button>
+  </div>
+  <div class="right">
+    <div id="vasia">Вася:</div>
+    <input id="inp1"/>
+    <button onclick="send2()">Відправити</button>
+  </div>
+  <div style="clear: both;"></div>
+  <div id="chat" class="center"></div>
+
+  <div id="numberOfMessages">0</div>
+
+</body>
+
+</html>
