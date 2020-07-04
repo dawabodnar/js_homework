@@ -1,0 +1,27 @@
+var list1 = document.querySelectorAll(".spy1x");
+var list2 = document.querySelectorAll(".spy1x");
+var list =[]
+for(var i = 1; i < list1.length; i++){
+list.push(list1[i]);
+}
+for(var i = 1; i < list2.length; i++){
+list.push(list2[i]);
+}
+var listColumn = list[i].querySelectorAll("td");
+//console.log(list);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

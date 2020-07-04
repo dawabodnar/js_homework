@@ -1,0 +1,22 @@
+var arrData = [];
+var listRow = document.querySelectorAll(".table_block>table>tbody>tr");
+
+for(var i = 0; i < listRow.length; i++){
+	var myObject = {};
+	var listColumn = listRow[i].querySelectorAll("td");
+
+	myObject.Ip = listColumn[0].innerText;
+        myObject.Port = listColumn[1].innerText;
+        myObject.Type = listColumn[4].innerText;
+        myObject.Country = listColumn[2].innerText;
+       arrData.push(myObject);
+}
+
+for(var i = 0; i < arrData.length; i++){
+print(arrData [i]);
+}
+
+
+function print(myObject){
+	console.log(myObject.Ip + ":" + myObject.Port + "	" + myObject.Type + "	" + "(" + myObject.Country + ")");
+}
